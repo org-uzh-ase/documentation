@@ -1,0 +1,4 @@
+org.uzh.ase.candidates
+org.uzh.ase.candidates.model
+org.uzh.ase.candidates.repository
+org.uzh.ase.candidates.restservice

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.uzh.ase.candidates"},{"l":"org.uzh.ase.candidates.model"},{"l":"org.uzh.ase.candidates.repository"},{"l":"org.uzh.ase.candidates.restservice"}]
