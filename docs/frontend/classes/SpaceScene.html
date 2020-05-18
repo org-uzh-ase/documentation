@@ -1,0 +1,2166 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>org-uzh-ase-frontend documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/Laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">org-uzh-ase-frontend documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>SpaceScene</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/phaser/phaser.component.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>The setup for the shooting game. For more information see <a href="https://phaser.io/phaser3">https://phaser.io/phaser3</a></p>
+
+            </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#aliens">aliens</a>
+                            </li>
+                            <li>
+                                <a href="#bullets">bullets</a>
+                            </li>
+                            <li>
+                                <a href="#bulletTime">bulletTime</a>
+                            </li>
+                            <li>
+                                <a href="#config">config</a>
+                            </li>
+                            <li>
+                                <a href="#cursors">cursors</a>
+                            </li>
+                            <li>
+                                <a href="#enemyBullets">enemyBullets</a>
+                            </li>
+                            <li>
+                                <a href="#explosions">explosions</a>
+                            </li>
+                            <li>
+                                <a href="#fireButton">fireButton</a>
+                            </li>
+                            <li>
+                                <a href="#firingTimer">firingTimer</a>
+                            </li>
+                            <li>
+                                <a href="#gameOverModal">gameOverModal</a>
+                            </li>
+                            <li>
+                                <a href="#gameOverText">gameOverText</a>
+                            </li>
+                            <li>
+                                <a href="#isGameOver">isGameOver</a>
+                            </li>
+                            <li>
+                                <a href="#lastAlienBulletTime">lastAlienBulletTime</a>
+                            </li>
+                            <li>
+                                <a href="#lastPlayerBulletTime">lastPlayerBulletTime</a>
+                            </li>
+                            <li>
+                                <a href="#lives">lives</a>
+                            </li>
+                            <li>
+                                <a href="#livingAliens">livingAliens</a>
+                            </li>
+                            <li>
+                                <a href="#player">player</a>
+                            </li>
+                            <li>
+                                <a href="#playerLives">playerLives</a>
+                            </li>
+                            <li>
+                                <a href="#score">score</a>
+                            </li>
+                            <li>
+                                <a href="#scorePrefix">scorePrefix</a>
+                            </li>
+                            <li>
+                                <a href="#scoreText">scoreText</a>
+                            </li>
+                            <li>
+                                <a href="#starfield">starfield</a>
+                            </li>
+                            <li>
+                                <a href="#stateText">stateText</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#create">create</a>
+                            </li>
+                            <li>
+                                <a href="#createAliens">createAliens</a>
+                            </li>
+                            <li>
+                                <a href="#createBullets">createBullets</a>
+                            </li>
+                            <li>
+                                <a href="#createGameOverModal">createGameOverModal</a>
+                            </li>
+                            <li>
+                                <a href="#createPlayerLives">createPlayerLives</a>
+                            </li>
+                            <li>
+                                <a href="#fireEnemyBullet">fireEnemyBullet</a>
+                            </li>
+                            <li>
+                                <a href="#firePlayerBullet">firePlayerBullet</a>
+                            </li>
+                            <li>
+                                <a href="#handleEnemyCollision">handleEnemyCollision</a>
+                            </li>
+                            <li>
+                                <a href="#handleGameOver">handleGameOver</a>
+                            </li>
+                            <li>
+                                <a href="#handlePlayerCollision">handlePlayerCollision</a>
+                            </li>
+                            <li>
+                                <a href="#preload">preload</a>
+                            </li>
+                            <li>
+                                <a href="#removeLife">removeLife</a>
+                            </li>
+                            <li>
+                                <a href="#setGameOver">setGameOver</a>
+                            </li>
+                            <li>
+                                <a href="#update">update</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="aliens"></a>
+                        <span class="name">
+                            <b>
+                            aliens</b>
+                            <a href="#aliens"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/phaser/phaser.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bullets"></a>
+                        <span class="name">
+                            <b>
+                            bullets</b>
+                            <a href="#bullets"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/phaser/phaser.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bulletTime"></a>
+                        <span class="name">
+                            <b>
+                            bulletTime</b>
+                            <a href="#bulletTime"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/phaser/phaser.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/app/phaser/phaser.component.ts:69</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cursors"></a>
+                        <span class="name">
+                            <b>
+                            cursors</b>
+                            <a href="#cursors"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/phaser/phaser.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="enemyBullets"></a>
+                        <span class="name">
+                            <b>
+                            enemyBullets</b>
+                            <a href="#enemyBullets"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/phaser/phaser.component.ts:59</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="explosions"></a>
+                        <span class="name">
+                            <b>
+                            explosions</b>
+                            <a href="#explosions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/phaser/phaser.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="fireButton"></a>
+                        <span class="name">
+                            <b>
+                            fireButton</b>
+                            <a href="#fireButton"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/phaser/phaser.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="firingTimer"></a>
+                        <span class="name">
+                            <b>
+                            firingTimer</b>
+                            <a href="#firingTimer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/phaser/phaser.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="gameOverModal"></a>
+                        <span class="name">
+                            <b>
+                            gameOverModal</b>
+                            <a href="#gameOverModal"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/phaser/phaser.component.ts:67</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="gameOverText"></a>
+                        <span class="name">
+                            <b>
+                            gameOverText</b>
+                            <a href="#gameOverText"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/phaser/phaser.component.ts:68</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isGameOver"></a>
+                        <span class="name">
+                            <b>
+                            isGameOver</b>
+                            <a href="#isGameOver"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/phaser/phaser.component.ts:66</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lastAlienBulletTime"></a>
+                        <span class="name">
+                            <b>
+                            lastAlienBulletTime</b>
+                            <a href="#lastAlienBulletTime"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/phaser/phaser.component.ts:63</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lastPlayerBulletTime"></a>
+                        <span class="name">
+                            <b>
+                            lastPlayerBulletTime</b>
+                            <a href="#lastPlayerBulletTime"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/phaser/phaser.component.ts:64</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lives"></a>
+                        <span class="name">
+                            <b>
+                            lives</b>
+                            <a href="#lives"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/phaser/phaser.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="livingAliens"></a>
+                        <span class="name">
+                            <b>
+                            livingAliens</b>
+                            <a href="#livingAliens"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/phaser/phaser.component.ts:62</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="player"></a>
+                        <span class="name">
+                            <b>
+                            player</b>
+                            <a href="#player"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/phaser/phaser.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="playerLives"></a>
+                        <span class="name">
+                            <b>
+                            playerLives</b>
+                            <a href="#playerLives"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/phaser/phaser.component.ts:65</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="score"></a>
+                        <span class="name">
+                            <b>
+                            score</b>
+                            <a href="#score"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/phaser/phaser.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="scorePrefix"></a>
+                        <span class="name">
+                            <b>
+                            scorePrefix</b>
+                            <a href="#scorePrefix"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;SCORE: &#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/phaser/phaser.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="scoreText"></a>
+                        <span class="name">
+                            <b>
+                            scoreText</b>
+                            <a href="#scoreText"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/phaser/phaser.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="starfield"></a>
+                        <span class="name">
+                            <b>
+                            starfield</b>
+                            <a href="#starfield"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/phaser/phaser.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stateText"></a>
+                        <span class="name">
+                            <b>
+                            stateText</b>
+                            <a href="#stateText"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/phaser/phaser.component.ts:61</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="create"></a>
+                    <span class="name">
+                        <b>
+                            create
+                        </b>
+                        <a href="#create"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>create()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createAliens"></a>
+                    <span class="name">
+                        <b>
+                            createAliens
+                        </b>
+                        <a href="#createAliens"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createAliens()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createBullets"></a>
+                    <span class="name">
+                        <b>
+                            createBullets
+                        </b>
+                        <a href="#createBullets"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createBullets(imageName, sceneRef)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="173"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:173</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>imageName</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>sceneRef</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createGameOverModal"></a>
+                    <span class="name">
+                        <b>
+                            createGameOverModal
+                        </b>
+                        <a href="#createGameOverModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createGameOverModal(sceneRef)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="245"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:245</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sceneRef</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createPlayerLives"></a>
+                    <span class="name">
+                        <b>
+                            createPlayerLives
+                        </b>
+                        <a href="#createPlayerLives"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createPlayerLives(sceneRef)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="374"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:374</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sceneRef</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fireEnemyBullet"></a>
+                    <span class="name">
+                        <b>
+                            fireEnemyBullet
+                        </b>
+                        <a href="#fireEnemyBullet"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fireEnemyBullet(player, time, sceneRef)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="207"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:207</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>player</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>time</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>sceneRef</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="firePlayerBullet"></a>
+                    <span class="name">
+                        <b>
+                            firePlayerBullet
+                        </b>
+                        <a href="#firePlayerBullet"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>firePlayerBullet(sceneRef)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="181"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:181</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sceneRef</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleEnemyCollision"></a>
+                    <span class="name">
+                        <b>
+                            handleEnemyCollision
+                        </b>
+                        <a href="#handleEnemyCollision"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleEnemyCollision(bullet, alien)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="305"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:305</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bullet</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>alien</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleGameOver"></a>
+                    <span class="name">
+                        <b>
+                            handleGameOver
+                        </b>
+                        <a href="#handleGameOver"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleGameOver(didPlayerWin)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="393"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:393</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>didPlayerWin</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handlePlayerCollision"></a>
+                    <span class="name">
+                        <b>
+                            handlePlayerCollision
+                        </b>
+                        <a href="#handlePlayerCollision"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handlePlayerCollision(player, bullet)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="340"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:340</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>player</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>bullet</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="preload"></a>
+                    <span class="name">
+                        <b>
+                            preload
+                        </b>
+                        <a href="#preload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>preload()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeLife"></a>
+                    <span class="name">
+                        <b>
+                            removeLife
+                        </b>
+                        <a href="#removeLife"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeLife()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="366"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:366</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setGameOver"></a>
+                    <span class="name">
+                        <b>
+                            setGameOver
+                        </b>
+                        <a href="#setGameOver"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setGameOver()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="426"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:426</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="update"></a>
+                    <span class="name">
+                        <b>
+                            update
+                        </b>
+                        <a href="#update"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>update(time)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="432"
+                            class="link-to-prism">src/app/phaser/phaser.component.ts:432</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>time</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Output, EventEmitter } from &#x27;@angular/core&#x27;;
+import * as Phaser from &quot;phaser&quot;;
+import {CONFIG} from &#x27;./CONFIG&#x27;;
+import {Bullet} from &#x27;./Bullet&#x27;;
+
+
+@Component({
+  selector: &#x27;app-phaser&#x27;,
+  templateUrl: &#x27;./phaser.component.html&#x27;,
+  styleUrls: [&#x27;./phaser.component.sass&#x27;]
+})
+/**This componenet contains the actual shooting game.*/
+export class PhaserComponent implements OnInit {
+  /**The shooting game*/
+  phaserGame: Phaser.Game;
+  /**Necessary configuration of the game.*/
+  config: Phaser.Types.Core.GameConfig;
+  /**Score achieved by the player in the shooting game.*/
+  score: integer;
+  /**Emits to the {@link SpaceComponent} when the player finished or lost the shooting game.*/
+  @Output() gameOver: EventEmitter&lt;integer&gt; &#x3D; new EventEmitter&lt;integer&gt;();
+
+  constructor() {
+    this.config &#x3D; CONFIG;
+    this.config.scene &#x3D; [SpaceScene];
+   }
+
+  ngOnInit(): void {
+    this.phaserGame &#x3D; new Phaser.Game(this.config);
+    window[&quot;angularLink&quot;] &#x3D; this;
+  }
+
+  /**Remove the shooting game when the player finished or lost the game.*/
+  setGameOver(score: integer){
+    this.gameOver.emit(score);
+    this.phaserGame.destroy(true, false);
+  }
+
+  /**This method stops the shooting game. This method is triggered when time on the quiz part of the game ran out.*/
+  stopGame(){
+    this.score &#x3D; this.phaserGame.scene.scenes[0].score;
+    this.setGameOver(this.score);
+  }
+}
+/**The setup for the shooting game. For more information see https://phaser.io/phaser3*/
+class SpaceScene extends Phaser.Scene{
+  player;
+  aliens;
+  bullets;
+  bulletTime &#x3D; 0;
+  cursors;
+  fireButton;
+  explosions;
+  starfield;
+  score &#x3D; 0;
+  scorePrefix &#x3D; &#x27;SCORE: &#x27;;
+  scoreText;
+  lives;
+  enemyBullets;
+  firingTimer &#x3D; 0;
+  stateText;
+  livingAliens &#x3D; [];
+  lastAlienBulletTime &#x3D; 0;
+  lastPlayerBulletTime &#x3D; 0;
+  playerLives;
+  isGameOver &#x3D; false;
+  gameOverModal;
+  gameOverText;
+  config;
+
+  preload(){
+    this.load.image(&#x27;bullet&#x27;, &#x27;../assets/invaders/bullet.png&#x27;);
+    this.load.image(&#x27;enemyBullet&#x27;, &#x27;assets/invaders/enemy-bullet.png&#x27;);
+    this.load.spritesheet(&#x27;invader&#x27;, &#x27;assets/invaders/invader32x32x4.png&#x27;, {frameWidth: 32, frameHeight: 32});
+    this.load.image(&#x27;ship&#x27;, &#x27;assets/invaders/player.png&#x27;);
+    this.load.spritesheet(&#x27;kaboom&#x27;, &#x27;assets/invaders/explode.png&#x27;, {frameWidth:128, frameHeight: 128});
+    this.load.image(&#x27;starfield&#x27;, &#x27;assets/invaders/starfield.png&#x27;);
+    this.load.image(&#x27;background&#x27;, &#x27;assets/invaders/background2.png&#x27;);
+  }
+
+  create(){
+    // Setup our aliens&#x27; &quot;hover&quot; animation.
+    this.anims.create({
+      key: &#x27;hover&#x27;,
+      frames: this.anims.generateFrameNumbers( &#x27;invader&#x27;, {
+          start: 0,
+          end: 9
+      }),
+      frameRate: 10,
+      repeat: -1
+  });
+
+  // Setup our explosion animation.
+  this.anims.create({
+      key: &#x27;explode&#x27;,
+      frames: this.anims.generateFrameNumbers( &#x27;kaboom&#x27;, {
+          start: 0,
+          end: 15
+      }),
+      frameRate: 16,
+      repeat: 0,
+      hideOnComplete: true
+  });
+
+  // Set starfield&#x27;s value to be a tile sprite, and make sure it&#x27;s scaled properly.
+  this.starfield &#x3D; this.add.tileSprite( 0, 0, 2048, 2048, &#x27;starfield&#x27; );
+  this.starfield.setScale( 1 );
+
+  // Setup the score text.
+  this.scoreText &#x3D; this.add.text( 10, 15, this.scorePrefix + this.score, {&#x27;fontSize&#x27;: &#x27;25px&#x27;} );
+
+  // Setup the player&#x27;s lives.
+  this.playerLives &#x3D; this.add.group();
+  this.add.text(
+      this.sys.canvas.width - 210,    // From the right.
+      15,                             // From the top.
+      &#x27;LIVES:&#x27;,
+      {&#x27;fontSize&#x27;: &#x27;25px&#x27;}
+  );
+  this.createPlayerLives( this );
+
+  // Add the player as a sprite to the game physics!
+  this.player &#x3D; this.physics.add.sprite( 400, 500, &#x27;ship&#x27; );
+  this.player.setOrigin( 0.5, 0 );
+  this.player.setCollideWorldBounds( true );
+
+  // Create a group to hold our invaders.
+  this.aliens &#x3D; this.physics.add.group();
+  this.createAliens();
+
+  // Create the player and alien bullet collections.
+  this.bullets &#x3D; this.createBullets( &#x27;bullet&#x27;, this );
+  this.enemyBullets &#x3D; this.createBullets( &#x27;enemyBullet&#x27;, this );
+
+  // Create some explosions!
+  this.explosions &#x3D; this.add.group({
+      defaultKey: &#x27;kaboom&#x27;,
+      maxSize: 100
+  });
+
+  this.cursors &#x3D; this.input.keyboard.addKeys({
+    left:Phaser.Input.Keyboard.KeyCodes.A,
+    right:Phaser.Input.Keyboard.KeyCodes.D
+  });
+
+  // Wire up the player&#x27;s firing mechanism.
+  this.firePlayerBullet( this );
+
+  // Setup the game over screen.
+  this.createGameOverModal( this );
+  
+}
+
+createAliens () {
+
+  for (var y &#x3D; 0; y &lt; 4; y++)
+  {
+      for (var x &#x3D; 0; x &lt; 15; x++)
+      {
+          var alien &#x3D; this.aliens.create( x * 48, y * 45, &#x27;invader&#x27; );
+          alien.setOrigin( 0.5, 0.5 );
+          alien.lastFired &#x3D; 0;
+          alien.play( &#x27;hover&#x27; );
+      }
+  }
+      // Center our collection of aliens.
+      Phaser.Actions.IncX( this.aliens.getChildren(), 60 );
+
+      // Bring them further into the scene vertically.
+      Phaser.Actions.IncY( this.aliens.getChildren(), 75 );
+}
+
+createBullets(imageName, sceneRef) {
+  return sceneRef.physics.add.group({
+    classType: Bullet,
+    defaultKey: imageName,
+    runChildUpdate: true
+});
+}
+
+firePlayerBullet(sceneRef){
+  sceneRef.input.keyboard.on( &#x27;keydown_SPACE&#x27;, () &#x3D;&gt; {
+
+    // If the player died, no processing!
+    if ( this.player.active &#x3D;&#x3D;&#x3D; false ) {
+        return;
+    }
+
+    // Grab the first bullet in the group, activate it, and make it visible.
+    var playerBullet &#x3D; this.bullets.get().setActive( true ).setVisible( true );
+
+    // As long as we have a valid bullet, fire it.
+    if ( playerBullet &amp;&amp; sceneRef.time.now - this.lastPlayerBulletTime &gt; 1000 ) {
+
+        // We don&#x27;t need a target, since we don&#x27;t need to calculate angles.
+        playerBullet.fire( this.player ); 
+
+        // Setup collision handling.
+        sceneRef.physics.add.collider( this.aliens, playerBullet, this.handleEnemyCollision, null, this );
+
+        // Update the player last fired time.
+        this.lastPlayerBulletTime &#x3D; sceneRef.time.now;
+    }
+}, sceneRef );
+}
+
+fireEnemyBullet( player, time, sceneRef ) {
+
+  // Grab the first bullet in the group, activate it, and make it visible.
+  var enemyBullet &#x3D; this.enemyBullets.get().setActive( true ).setVisible( true );
+
+  // Find out how many alien invaders are still &quot;alive,&quot; and track them.
+  this.livingAliens &#x3D; this.aliens.getChildren().filter( alien &#x3D;&gt; alien.active &#x3D;&#x3D;&#x3D; true );
+
+  // If we have an instance of enemyBullet, AND there are aliens still alive.
+  if ( enemyBullet &amp;&amp; this.livingAliens.length &gt; 0 ) {
+
+      // Get a random number between 0 and the number of aliens alive.
+      var randomAlienNumber &#x3D; Phaser.Math.RND.integerInRange(
+          0,
+          this.livingAliens.length - 1
+      );
+
+      // Get the alien from the collection with that number.
+      var randomAlien &#x3D; this.livingAliens[ randomAlienNumber ];
+
+      // If this alien hasn&#x27;t fired in the last 4,000 milliseconds...
+      if ( time - randomAlien.lastFired &gt; 4000 ) {
+
+          // Set the lastFired, so the alien doesn&#x27;t fire again for a while.
+          randomAlien.lastFired &#x3D; time;
+
+          // FIRE ZE BULLET!
+          enemyBullet.fire( randomAlien, player );
+
+          // Setup collision handling.
+          sceneRef.physics.add.collider( player, enemyBullet, this.handlePlayerCollision, null, this );
+
+          // Update the global last fired time, and add 2,000 milliseconds.
+          this.lastAlienBulletTime &#x3D; time + 2000;
+      }
+  }
+}
+
+createGameOverModal(sceneRef){
+  // Create a &quot;modal&quot; window.
+  this.gameOverModal &#x3D; sceneRef.add.graphics();
+
+  // Set its background color.
+  this.gameOverModal.fillStyle( 0x303030, 0.8 );
+
+  // Set its shape, x- and y-coordinates, and size.
+  this.gameOverModal.fillRect(
+      0,
+      0,
+      sceneRef.sys.canvas.width,
+      sceneRef.sys.canvas.height
+  );
+
+  // It shouldn&#x27;t be visible... yet.
+  this.gameOverModal.visible &#x3D; false;
+
+  // Get our game over text ready.
+  this.gameOverText &#x3D; sceneRef.add.text(
+      sceneRef.sys.canvas.width / 2,
+      sceneRef.sys.canvas.height / 2,
+      &#x27; &#x27;,
+      {
+          align: &#x27;center&#x27;
+      }
+  );
+  this.gameOverText.setOrigin( 0.5, 0.5 );
+
+  // It shouldn&#x27;t be visible... yet.
+  this.gameOverText.visible &#x3D; false;
+
+  // Handle the player wanting to start over on mouse click.
+  sceneRef.input.on( &#x27;pointerdown&#x27;, ( pointer ) &#x3D;&gt; {
+
+      // Only on a Game Over condition.
+      if ( this.isGameOver ) {
+
+          // Reset everything.
+          this.bullets.clear( true, true );
+          this.enemyBullets.clear( true, true );
+          this.explosions.clear( true, true );
+          this.aliens.clear( true, true );
+          this.playerLives.clear( true, true );
+
+          // Create again.
+          this.createAliens();
+          this.createPlayerLives( sceneRef );
+          this.player.setActive( true ).setVisible( true );
+
+          // Hide the text, followed by the modal.
+          this.gameOverText.visible &#x3D; false;
+          this.gameOverModal.visible &#x3D; false;            
+
+          // Reset the game over state.
+          this.isGameOver &#x3D; false;
+      }
+  }, sceneRef );
+}
+
+handleEnemyCollision(bullet, alien){
+  if ( bullet.active &#x3D;&#x3D;&#x3D; true &amp;&amp; alien.active &#x3D;&#x3D;&#x3D; true ) {
+
+      // Deactivate the bullet, and take it off the screen.
+      bullet.setActive( false ).setVisible( false );
+
+      // Get the first explosion, and activate it.
+      var explosion &#x3D; this.explosions.get().setActive( true );
+
+      // Place the explosion on the screen, and play the animation.
+      explosion.setOrigin( 0.5, 0.5 );
+      explosion.x &#x3D; alien.x;
+      explosion.y &#x3D; alien.y;
+      explosion.play( &#x27;explode&#x27; );
+
+    // Deactivate and remove the alien from the screen.
+    alien.setActive( false ).setVisible( false );
+
+    // Increment the score.
+    this.score +&#x3D; 20;
+    this.scoreText.setText( this.scorePrefix + this.score );
+
+    // Game Over condition: has the player killed all the alien invaders?
+    if ( this.aliens.countActive() &#x3D;&#x3D;&#x3D; 0 ) {
+
+        // Award a bonus for winning.
+        this.score +&#x3D; 1000;
+        this.scoreText.setText( this.scorePrefix + this.score );
+
+        // Handle Game Over.
+        this.handleGameOver( true );
+    }
+  }
+}
+
+handlePlayerCollision( player, bullet ) {
+
+  // If both the player and bullet are active...
+  if ( player.active &#x3D;&#x3D;&#x3D; true &amp;&amp; bullet.active &#x3D;&#x3D;&#x3D; true ) {
+
+      // Deactivate the bullet, and take it off the screen.
+      bullet.setActive( false ).setVisible( false );
+
+      // Get the first explosion, and activate it.
+      var explosion &#x3D; this.explosions.get().setActive( true );
+
+      // Place the explosion on the screen, and play the animation.
+      explosion.setOrigin( 0.5, 0.5 );
+      explosion.x &#x3D; player.x;
+      explosion.y &#x3D; player.y;
+      explosion.play( &#x27;explode&#x27; );
+
+      this.removeLife();
+
+      // Game Over condition: has the player lost all their lives?
+      if ( this.playerLives.countActive() &lt; 1 ) {
+        this.handleGameOver( false );
+      }
+  }
+}
+
+removeLife(){
+  // Remove a life.
+  var life &#x3D; this.playerLives.getFirstAlive();
+  if ( life ) {
+      life.setActive( false ).setVisible( false );
+  }
+}
+
+createPlayerLives(sceneRef){
+  // Our x-coordinate for the lives images.
+  var x &#x3D; sceneRef.sys.canvas.width - 105;
+
+  // Only 3.
+  for ( var i &#x3D; 0; i &lt; 3; i++ ) {
+      // Calculate this life&#x27;s x-coordinate.
+      var lifeX &#x3D; x + 40 * i;
+
+      // Add a life to our collection of lives.
+      var life &#x3D; this.playerLives.create( lifeX, 25, &#x27;ship&#x27; );
+
+      // Set the life&#x27;s origin, scale, and opacity.
+      life.setOrigin( 0.5, 0.5 );
+      life.setScale( 0.75 );
+      life.alpha &#x3D; 0.6;
+  }
+}
+
+handleGameOver( didPlayerWin ) {
+
+  // Set the condition flag, so the aliens stop firing if any are left.
+  this.isGameOver &#x3D; true;
+
+  // Remove and disable a group item.
+  var removeDisableItem &#x3D; function( item ) {
+      item.setActive( false ).setVisible( false );
+  };
+
+  // Disable all bullets, so no one can fire.
+  Phaser.Utils.Array.Each( this.bullets.getChildren(), removeDisableItem , this.game.context);
+  Phaser.Utils.Array.Each( this.enemyBullets.getChildren(), removeDisableItem, this.game.context );
+  Phaser.Utils.Array.Each( this.aliens.getChildren(), removeDisableItem, this.game.context );
+
+  // Disable the player.
+  this.player.setActive( false ).setVisible( false );
+
+  // The text to display, based on whether the player won.
+  var displayText &#x3D; ( didPlayerWin )
+      ? &#x27; YOU WON! \n\n Click to restart.&#x27;
+      : &#x27; GAME OVER \n\n Click to restart.&#x27;;
+
+  // Set the text.
+  this.gameOverText.setText( displayText );
+
+  // Show the modal, followed by the text.
+  this.gameOverModal.visible &#x3D; true;
+  this.gameOverText.visible &#x3D; true;
+
+  this.setGameOver();
+}
+
+setGameOver(){
+  var comp: PhaserComponent;
+  comp &#x3D; window[&#x27;angularLink&#x27;] as PhaserComponent;
+  comp.setGameOver(this.score);
+}
+
+update(time) {
+
+      
+    // Scroll our starfield background.
+    this.starfield.tilePositionY +&#x3D; this.isGameOver ? 0.5 : 2;
+
+    // Is the player pressing the left arrow?
+    if ( this.cursors.left.isDown ) {
+      this.player.setVelocityX( -200 );
+    }
+
+    // Is the player pressing the right arrow?
+    else if ( this.cursors.right.isDown ) {
+      this.player.setVelocityX( 200 );
+    }
+
+    // Otherwise, we need to slow them down.
+    else {
+      this.player.setVelocityX( 0 );
+    }
+    
+    // If the invaders haven&#x27;t fired recently - and the game isn&#x27;t over - fire one.
+    if ( time &gt; this.lastAlienBulletTime &amp;&amp; !this.isGameOver ) {
+      this.fireEnemyBullet( this.player, time, this );
+    }
+}
+
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'SpaceScene.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
