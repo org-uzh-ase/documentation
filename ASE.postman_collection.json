@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "4cce0d1b-f099-4d30-9f58-cb4b7072b0c9",
+		"name": "ASE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Score",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": \"user4\",\n\t\"scoreNo\": 500\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/scores/score",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"scores",
+						"score"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Scores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/scores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"scores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Candidates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/candidates?movie_id=1000095&level=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"candidates"
+					],
+					"query": [
+						{
+							"key": "movie_id",
+							"value": "1000095"
+						},
+						{
+							"key": "level",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Quiz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/quizzes/quiz?level=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"quizzes",
+						"quiz"
+					],
+					"query": [
+						{
+							"key": "level",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
