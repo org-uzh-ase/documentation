@@ -9,7 +9,6 @@
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 	      <link rel="stylesheet" href="../styles/style.css">
-        <link rel="stylesheet" href="../styles/Laravel.css">
     </head>
     <body>
 
@@ -117,7 +116,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="4" class="link-to-prism">src/app/model/score.ts:4</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/model/score.ts:6</a></div>
                             </td>
                         </tr>
 
@@ -192,10 +191,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="4" class="link-to-prism">src/app/model/score.ts:4</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/model/score.ts:6</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Score amount that player reached </p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -219,10 +224,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="3" class="link-to-prism">src/app/model/score.ts:3</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="4" class="link-to-prism">src/app/model/score.ts:4</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>User name that should get saved in the leaderboard </p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -239,7 +250,9 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export class Score{
+    /** User name that should get saved in the leaderboard */
     user: string;
+    /** Score amount that player reached */
     scoreNo: integer;
     
     constructor(user: string, scoreNo: integer){

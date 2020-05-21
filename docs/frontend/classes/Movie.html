@@ -9,7 +9,6 @@
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 	      <link rel="stylesheet" href="../styles/style.css">
-        <link rel="stylesheet" href="../styles/Laravel.css">
     </head>
     <body>
 
@@ -120,7 +119,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="5" class="link-to-prism">src/app/model/movie.ts:5</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/model/movie.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -207,10 +206,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="5" class="link-to-prism">src/app/model/movie.ts:5</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/model/movie.ts:8</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Anser code of a movie </p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -234,10 +239,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="3" class="link-to-prism">src/app/model/movie.ts:3</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="4" class="link-to-prism">src/app/model/movie.ts:4</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>URL of a poster image for the movie </p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -261,10 +272,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="4" class="link-to-prism">src/app/model/movie.ts:4</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/model/movie.ts:6</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Title of a movie </p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -281,15 +298,18 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export class Movie{
-   poster: string;
-   title: string;
-   code: string;
-   
-   constructor(poster: string, title: string, code: string){
-       this.poster &#x3D; poster;
-       this.title &#x3D; title;
-       this.code &#x3D; code;
-   }
+    /** URL of a poster image for the movie */
+    poster: string;
+    /** Title of a movie */
+    title: string;
+    /** Anser code of a movie */
+    code: string;
+    
+    constructor(poster: string, title: string, code: string){
+        this.poster &#x3D; poster;
+        this.title &#x3D; title;
+        this.code &#x3D; code;
+    }
 }</code></pre>
     </div>
 </div>

@@ -9,7 +9,6 @@
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 	      <link rel="stylesheet" href="../styles/style.css">
-        <link rel="stylesheet" href="../styles/Laravel.css">
     </head>
     <body>
 
@@ -119,7 +118,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/services/user.service.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/services/user.service.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -184,14 +183,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/services/user.service.ts:12</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/services/user.service.ts:20</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Request scores from the Score service</p>
+</div>
 
                     <div class="io-description">
                         <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
@@ -223,14 +224,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="16"
-                            class="link-to-prism">src/app/services/user.service.ts:16</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="28"
+                            class="link-to-prism">src/app/services/user.service.ts:28</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Upload score of the current game.</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -240,6 +243,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -254,6 +258,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>How much score did the user reach </p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -302,10 +310,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/services/user.service.ts:8</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/services/user.service.ts:13</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Base URL of the server </p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -320,16 +334,28 @@ import { HttpClient, HttpHeaders } from &#x27;@angular/common/http&#x27;;
 import { Score } from &#x27;../model/score&#x27;;
 
 @Injectable()
-/**Service responsible for making calls to the User Microservice. For more information see https://app.swaggerhub.com/apis/ltoedt/ASE/0.1*/
+/**
+ * Service responsible for making calls to the User Microservice. For more information see https://app.swaggerhub.com/apis-docs/ltoedt/ASE/0.1
+ */
 export class UserService {
+  /**
+   * Base URL of the server 
+   */
   url &#x3D; &quot;&quot;
 
   constructor(private http: HttpClient) { }
 
+  /**
+   * Request scores from the Score service
+   */
   getScores(){
     return this.http.get(this.url + &quot;:8081&quot; + &quot;/api/scores&quot;);
   }
 
+  /**
+   * Upload score of the current game.
+   * @param scr How much score did the user reach 
+   */
   postScore(scr: Score){
     const bodyString &#x3D; JSON.stringify(scr);
     const httpOptions &#x3D; {

@@ -9,7 +9,6 @@
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 	      <link rel="stylesheet" href="../styles/style.css">
-        <link rel="stylesheet" href="../styles/Laravel.css">
     </head>
     <body>
 
@@ -120,7 +119,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/app/model/quiz.ts:7</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/model/quiz.ts:10</a></div>
                             </td>
                         </tr>
 
@@ -207,10 +206,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/model/quiz.ts:6</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/model/quiz.ts:8</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>All movies that were chosen to be displayed </p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -234,10 +239,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/app/model/quiz.ts:7</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/model/quiz.ts:10</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Answer code of the movie that is being described </p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -261,10 +272,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="5" class="link-to-prism">src/app/model/quiz.ts:5</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/model/quiz.ts:6</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Description of correct movie </p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -284,8 +301,11 @@
 
 /**Representation of the quiz object received by the Quiz Microservice.*/
 export class Quiz{
+    /** Description of correct movie */
     description: string;
+    /** All movies that were chosen to be displayed */
     answers: Movie[];
+    /** Answer code of the movie that is being described */
     correctAnswer: string;
     
     constructor(description: string, movies: Movie[], correctAnswer: string){

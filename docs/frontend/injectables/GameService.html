@@ -9,7 +9,6 @@
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 	      <link rel="stylesheet" href="../styles/style.css">
-        <link rel="stylesheet" href="../styles/Laravel.css">
     </head>
     <body>
 
@@ -116,7 +115,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/services/game.service.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/services/game.service.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -181,14 +180,16 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="12"
-                            class="link-to-prism">src/app/services/game.service.ts:12</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="21"
+                            class="link-to-prism">src/app/services/game.service.ts:21</a></div>
                 </td>
             </tr>
 
 
             <tr>
                 <td class="col-md-4">
+                    <div class="io-description"><p>Request a quiz data that should be displayed</p>
+</div>
 
                     <div class="io-description">
                         <b>Parameters :</b>
@@ -198,6 +199,7 @@
                                     <td>Name</td>
                                     <td>Type</td>
                                     <td>Optional</td>
+                                    <td>Description</td>
                                 </tr>
                             </thead>
                             <tbody>
@@ -212,6 +214,10 @@
                                     </td>
 
 
+                                    <td>
+                                        <p>Game difficulty that the player chose</p>
+
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -260,10 +266,16 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/services/game.service.ts:8</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/services/game.service.ts:13</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Base URL of the server </p>
+</div>
+                    </td>
+                </tr>
 
             </tbody>
         </table>
@@ -278,12 +290,21 @@ import { HttpClient } from &#x27;@angular/common/http&#x27;;
 import { retry } from &#x27;rxjs/operators&#x27;;
 
 @Injectable()
-/**Service responsible for making calls to the Quiz Microservice. For more information see https://app.swaggerhub.com/apis/ltoedt/ASE/0.1*/
+/** 
+ * Service responsible for making calls to the Quiz Microservice. For more information see https://app.swaggerhub.com/apis-docs/ltoedt/ASE/0.1 
+ */
 export class GameService {
+  /**
+   * Base URL of the server 
+   */
   url &#x3D; &quot;&quot;
 
   constructor(private http: HttpClient) { }
 
+  /**
+   * Request a quiz data that should be displayed
+   * @param level Game difficulty that the player chose
+   */
   getQuiz(level: integer){
     return this.http.get(this.url + &quot;:8080&quot; + &quot;/api/quizzes/quiz?level&#x3D;&quot; + level)
     .pipe(

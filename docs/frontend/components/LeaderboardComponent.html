@@ -9,7 +9,6 @@
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 	      <link rel="stylesheet" href="../styles/style.css">
-        <link rel="stylesheet" href="../styles/Laravel.css">
     </head>
     <body>
 
@@ -408,8 +407,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="48"
-                            class="link-to-prism">src/app/leaderboard/leaderboard.component.ts:48</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/leaderboard/leaderboard.component.ts:51</a></div>
                 </td>
             </tr>
 
@@ -607,6 +606,9 @@ export class LeaderboardComponent implements OnInit {
     var loc &#x3D; window.location.href;
     var tmp &#x3D; loc.split(&quot;:&quot;);
     var url &#x3D; tmp.slice(0,2).join(&quot;:&quot;);
+    if(tmp.length &#x3D;&#x3D; 2){
+      url &#x3D; url.slice(0, -1); // remove trailing &quot;/&quot;; otherwise calls &quot;.com/:8080/api&quot;
+    }
     this.userService.url &#x3D; url;
     
     this.userService.getScores().subscribe(
@@ -627,7 +629,7 @@ export class LeaderboardComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;wrapper&quot; *ngIf&#x3D;&quot;!leaderboardEmpty&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;wrapper&quot;&gt;
   &lt;form class&#x3D;&quot;submitLeader&quot; #leaderForm&#x3D;&quot;ngForm&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot; *ngIf&#x3D;&quot;!submitted &amp;&amp; gameover&quot;&gt;
     &lt;div class&#x3D;&quot;form-group&quot;&gt;
       &lt;label for&#x3D;&quot;name&quot;&gt;Username: &lt;/label&gt;
@@ -743,7 +745,7 @@ h2
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="wrapper" *ngIf="!leaderboardEmpty">  <form class="submitLeader" #leaderForm="ngForm" (ngSubmit)="onSubmit()" *ngIf="!submitted && gameover">    <div class="form-group">      <label for="name">Username: </label>      <input type="text" class="form-control" id="name" required [(ngModel)]="score.user" name="name">    </div>    <button class="button" type="submit">Submit your Score</button>  </form><h2>Leaderboard</h2><div class="leaderboard">    <table>      <caption *ngIf="false">Leaderboard</caption>        <tr>          <th scope="col"></th>          <th scope="col">User</th>          <th scope="col">Score</th>        </tr>        <tr *ngFor="let leader of leaders; let i = index">            <td>{{i + 1}}</td>            <td>{{leader.user}}</td>            <td>{{leader.scoreNo}}</td>         </tr>    </table></div></div> </div>'
+        var COMPONENT_TEMPLATE = '<div><div class="wrapper">  <form class="submitLeader" #leaderForm="ngForm" (ngSubmit)="onSubmit()" *ngIf="!submitted && gameover">    <div class="form-group">      <label for="name">Username: </label>      <input type="text" class="form-control" id="name" required [(ngModel)]="score.user" name="name">    </div>    <button class="button" type="submit">Submit your Score</button>  </form><h2>Leaderboard</h2><div class="leaderboard">    <table>      <caption *ngIf="false">Leaderboard</caption>        <tr>          <th scope="col"></th>          <th scope="col">User</th>          <th scope="col">Score</th>        </tr>        <tr *ngFor="let leader of leaders; let i = index">            <td>{{i + 1}}</td>            <td>{{leader.user}}</td>            <td>{{leader.scoreNo}}</td>         </tr>    </table></div></div> </div>'
     var COMPONENTS = [{'name': 'AnswerComponent', 'selector': 'app-answer'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'GameComponent', 'selector': 'app-game'},{'name': 'LeaderboardComponent', 'selector': 'app-leaderboard'},{'name': 'OptionComponent', 'selector': 'app-option'},{'name': 'PhaserComponent', 'selector': 'app-phaser'},{'name': 'QuestionComponent', 'selector': 'app-question'},{'name': 'QuizComponent', 'selector': 'app-quiz'},{'name': 'SpaceComponent', 'selector': 'app-space'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'LeaderboardComponent'};
