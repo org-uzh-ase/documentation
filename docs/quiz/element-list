@@ -1,5 +1,3 @@
-org.uzh.ase
-org.uzh.ase.quiz
 org.uzh.ase.quiz.model
 org.uzh.ase.quiz.rest
 org.uzh.ase.quiz.service
